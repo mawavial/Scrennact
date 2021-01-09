@@ -1,9 +1,12 @@
+import Main from './pages/main/main';
 
+let height = window.innerHeight;
+let width = window.innerWidth;
 
 function App() {
   return (
-    <div>
-      <h1>Start me up!</h1>
+    <div style={{width:width, height: height }}>
+      <Main />
     </div>
   );
 }

@@ -1,15 +1,33 @@
+import Movies from '../../components/movies/movies';
+import SearchKeyboard from '../../components/searchKeyboard/searchKeyboard';
+import Menu from '../../components/menu/menu';
+
+interface keyChange { 
+    value: number
+  }
+  
 
 
+export default function Main(props: keyChange) {    
+    // console.log('%c%s', 'color: #733d00', props.value);
 
-export default function Main() {
 return ( 
     <>
-     <table style={{width:'100%', height:'100%'}}>
-        <td style={{width:'20%', height:'100%', backgroundColor:'blue'}}>1</td>
-        <td style={{width:'30%', height:'100%', backgroundColor:'yellow'}}>2</td>
-        <td style={{width:'50%', height:'100%', backgroundColor:'red'}}>3</td>
+     <table style={{width:'100%', height:'100%'}} >
+         <tbody>
+         <tr>
+            <td style={{flexGrow: 1, width:'10%', height:'100%', border: '2px solid', borderRightColor:'white', backgroundColor:'aliceblue'}}>
+               <Menu /> 
+            </td>
+            <td style={{width:'30%', height:'100%',border: '2px solid', borderRightColor:'white' }}>
+                <SearchKeyboard />
+            </td>
+            <td style={{width:'50%', height:'100%'}}>
+                <Movies />
+            </td>
+        </tr>
+         </tbody>
      </table>
     </>
 )
-
 }

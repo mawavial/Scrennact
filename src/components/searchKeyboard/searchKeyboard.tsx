@@ -1,4 +1,11 @@
-export default function SearchKeyboard(){
+interface IMapper {
+    value?: number,
+    focusedMenu?: boolean,
+    focusedMovies?: boolean,
+    focusedKeyboard?: boolean
+  };
+
+export default function SearchKeyboard(props: any){
 
     return(
         <>

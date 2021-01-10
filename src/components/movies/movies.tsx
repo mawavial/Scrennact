@@ -1,8 +1,15 @@
-export default function Menu(){
+interface IMapper {
+    value?: number,
+    focusedMenu?: boolean,
+    focusedMovies?: boolean,
+    focusedKeyboard?: boolean
+  };
+
+export default function Menu(props: any){
 
     return(
         <>
-            <h1 style={{color:'white'}}>Keyboard</h1>
+            <h1 style={{color:'white'}}>Movies List</h1>
         </>
         )
 }

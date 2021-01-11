@@ -5,11 +5,11 @@
 //     focusedKeyboard?: boolean
 //   };
 
-export default function Menu(props: any){
+export default function Menu(props: any): JSX.Element{
 
     return(
         <>
-            <h1 style={{color:'white'}}>Movies List</h1>
+            <h1 style={{color:'#ffffff'}}>Movies List</h1>
         </>
         )
 }

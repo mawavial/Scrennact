@@ -85,7 +85,6 @@ export default function Main(props: IKeyChange): JSX.Element {
               height: '100%',
               border: '2px solid',
               borderRightColor: 'white',
-              backgroundColor: 'aliceblue',
             }}
               tabIndex={1}
               onFocus={(e): void => setFocus({ ...isFocused, focusedMenu: true })}

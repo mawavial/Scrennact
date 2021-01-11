@@ -34,42 +34,53 @@ export default function Menu(props: any) {
   const accountFocus: any | null = useRef(null);
 
   let manager = (value: EOptions): void => { 
-    console.log('%c%s', 'color: #102718', value);
     switch (value) {
       case EOptions.search:
         resetAll();
-        searchFocus.current.style.backgroundColor = 'blue';
+        searchFocus.current.style.backgroundColor = '#000000';
+        searchFocus.current.style.color = '#ffffff';
         break;
       case EOptions.home:
         resetAll();
-        homeFocus.current.style.backgroundColor = 'blue';
+        homeFocus.current.style.backgroundColor = '#000000';
+        homeFocus.current.style.color = '#ffffff';
         break;
       case EOptions.now:
         resetAll();
-        nowFocus.current.style.backgroundColor = 'blue';
+        nowFocus.current.style.backgroundColor = '#000000';
+        nowFocus.current.style.color = '#ffffff';
         break;
       case EOptions.categories:
         resetAll();
-        categoriesFocus.current.style.backgroundColor = 'blue';
+        categoriesFocus.current.style.backgroundColor = '#000000';
+        categoriesFocus.current.style.color = '#ffffff';
         break;
       case EOptions.account:
         resetAll();
-        accountFocus.current.style.backgroundColor = 'blue';
+        accountFocus.current.style.backgroundColor = '#000000';
+        accountFocus.current.style.color = '#ffffff';
         break;
       default:
         resetAll();
-        accountFocus.current.style.backgroundColor = 'blue';
+        accountFocus.current.style.backgroundColor = '#000000';
+        accountFocus.current.style.color = '#ffffff';
         break;
     }
   }
 
   let resetAll = () : void => { 
-    searchFocus.current.style.backgroundColor = 'white';
-    homeFocus.current.style.backgroundColor = 'white';
-    nowFocus.current.style.backgroundColor = 'white';
-    categoriesFocus.current.style.backgroundColor = 'white';
-    accountFocus.current.style.backgroundColor = 'white';
-    accountFocus.current.style.backgroundColor = 'white';
+    searchFocus.current.style.backgroundColor = '#000000';
+    searchFocus.current.style.color = '#ffffff';
+    homeFocus.current.style.backgroundColor = '#000000';
+    homeFocus.current.style.color = '#ffffff';
+    nowFocus.current.style.backgroundColor = '#000000';
+    nowFocus.current.style.color = '#ffffff';
+    categoriesFocus.current.style.backgroundColor = '#000000';
+    categoriesFocus.current.style.color = '#ffffff';
+    accountFocus.current.style.backgroundColor = '#000000';
+    accountFocus.current.style.color = '#ffffff';
+    accountFocus.current.style.backgroundColor = '#000000';
+    accountFocus.current.style.color = '#ffffff';
   }
 
   let goUp = () : void => { 
@@ -135,11 +146,11 @@ export default function Menu(props: any) {
       <div style={{ width: '100%', height: '25%', }} />
       <div style={{ width: '100%', height: '55%' }}>
         <div style={{ width: '100%', height: '100%' }}>
-          <div ref={searchFocus} style={{width: '100%', height: '25%' }}>Busca</div>
-          <div ref={homeFocus} style={{ width: '100%', height: '25%' }}>Início</div>
-          <div ref={nowFocus} style={{ width: '100%', height: '25%' }}>Agora na TV</div>
-          <div ref={categoriesFocus} style={{ width: '100%', height: '25%' }}>Categorias</div>
-          <div ref={accountFocus} style={{ width: '100%', height: '25%' }}>Minha Conta</div>
+          <div ref={searchFocus} style={{backgroundColor: '#000000', color:'#ffffff', width: '100%', height: '25%' }}>Busca</div>
+          <div ref={homeFocus} style={{ backgroundColor: '#000000', color:'#ffffff', width: '100%', height: '25%' }}>Início</div>
+          <div ref={nowFocus} style={{ backgroundColor: '#000000', color:'#ffffff', width: '100%', height: '25%' }}>Agora na TV</div>
+          <div ref={categoriesFocus} style={{ backgroundColor: '#000000', color:'#ffffff', width: '100%', height: '25%' }}>Categorias</div>
+          <div ref={accountFocus} style={{ backgroundColor: '#000000', color:'#ffffff', width: '100%', height: '25%' }}>Minha Conta</div>
         </div>
       </div>
       <div style={{ width: '100%', height: '20%', }} />

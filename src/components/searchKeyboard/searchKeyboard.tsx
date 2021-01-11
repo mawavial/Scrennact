@@ -20,7 +20,6 @@ enum EWho {
 };
 
 export default function SearchKeyboard(props: any) {
-    console.log('%c%s', 'color: #00736b', JSON.stringify(props.value));
 
     const labelText: string = '';
     let [input, setInput] = useState<string>('');
@@ -29,8 +28,6 @@ export default function SearchKeyboard(props: any) {
     let [position, setPosition] = useState<ICartesian>({ x: 0, y: 0 });
 
     let onchangeHandler = (): void => { };
-
-
 
     const aFocus: any | null = useRef(null);
     const bFocus: any | null = useRef(null);
@@ -205,14 +202,15 @@ export default function SearchKeyboard(props: any) {
         }
     }, [isFocused]);
 
+    useEffect(()=> {
+        managePosition(position);
+    },[position]);
 
 
-    let manager = (value:any): void => { 
-        console.log('%c%s', 'color: #d0bfff', JSON.stringify(position));
+    let managePosition = (value:ICartesian): void => { 
         switch ({x: position.x, y: position.y}) {
             case { x: 0, y: 0 }:
                 resetAll();
-                console.log('%c%s', 'color: #cc0036', 'bateu aqui');
                 aFocus.current.style.backgroundColor = '#ffffff';
                 aFocus.current.style.color = '#000000';
                 break;
@@ -408,12 +406,6 @@ export default function SearchKeyboard(props: any) {
                 break;
         }
     };
-
-
-
-
-
-
 
     return (
         <>

@@ -12,13 +12,13 @@ enum EOptions {
   now,
   categories,
   account
-}
+};
 
 enum EWho {
   menu,
   keyboard,
   movies
-}
+};
 
 
 
@@ -123,8 +123,8 @@ export default function Menu(props: any) {
         goUp();
       }
       else if (isFocused.value === 39) {
-        resetAll();
         manager(EOptions.search);
+        resetAll();
         props.onChange(EWho.keyboard);
       }
     }

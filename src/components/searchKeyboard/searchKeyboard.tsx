@@ -190,6 +190,7 @@ export default function SearchKeyboard(props: any) {
                 if (position.x === 0) {
                     //unhighlight current
                     resetAll();
+                    setPosition({x: 0, y: 0})
                     props.onChange(EWho.menu)
                 }
                 else {
@@ -208,9 +209,10 @@ export default function SearchKeyboard(props: any) {
 
 
     let managePosition = (value:ICartesian): void => { 
-        switch ({x: position.x, y: position.y}) {
-            case { x: 0, y: 0 }:
+        switch (value) {
+            case ({ x: 0, y: 0 }):
                 resetAll();
+                console.log('%c%s', 'color: #607339', );
                 aFocus.current.style.backgroundColor = '#ffffff';
                 aFocus.current.style.color = '#000000';
                 break;

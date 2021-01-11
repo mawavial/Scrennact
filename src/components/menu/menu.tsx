@@ -37,28 +37,28 @@ export default function Menu(props: any) {
     switch (value) {
       case EOptions.search:
         resetAll();
-        searchFocus.current.style.backgroundColor = '#000000';
-        searchFocus.current.style.color = '#ffffff';
+        searchFocus.current.style.backgroundColor = '#ffffff';
+        searchFocus.current.style.color = '#000000';
         break;
       case EOptions.home:
         resetAll();
-        homeFocus.current.style.backgroundColor = '#000000';
-        homeFocus.current.style.color = '#ffffff';
+        homeFocus.current.style.backgroundColor = '#ffffff';
+        homeFocus.current.style.color = '#000000';
         break;
       case EOptions.now:
         resetAll();
-        nowFocus.current.style.backgroundColor = '#000000';
-        nowFocus.current.style.color = '#ffffff';
+        nowFocus.current.style.backgroundColor = '#ffffff';
+        nowFocus.current.style.color = '#000000';
         break;
       case EOptions.categories:
         resetAll();
-        categoriesFocus.current.style.backgroundColor = '#000000';
-        categoriesFocus.current.style.color = '#ffffff';
+        categoriesFocus.current.style.backgroundColor = '#ffffff';
+        categoriesFocus.current.style.color = '#000000';
         break;
       case EOptions.account:
         resetAll();
-        accountFocus.current.style.backgroundColor = '#000000';
-        accountFocus.current.style.color = '#ffffff';
+        accountFocus.current.style.backgroundColor = '#ffffff';
+        accountFocus.current.style.color = '#000000';
         break;
       default:
         resetAll();

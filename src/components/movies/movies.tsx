@@ -1,9 +1,9 @@
-interface IMapper {
-    value?: number,
-    focusedMenu?: boolean,
-    focusedMovies?: boolean,
-    focusedKeyboard?: boolean
-  };
+// interface IMapper {
+//     value?: number,
+//     focusedMenu?: boolean,
+//     focusedMovies?: boolean,
+//     focusedKeyboard?: boolean
+//   };
 
 export default function Menu(props: any){
 
